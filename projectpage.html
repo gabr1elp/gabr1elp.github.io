@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<script>
+    function showContent() {
+      var contentElement = document.getElementById('content');
+      contentElement.style.display = 'block';
+    }
+</script>
+
+<title>SHPortfolio</title>
+
+<!-- CSS For top buttons // Header -->
+<style>
+    .StudentName{
+        background-color: #004d73;
+        position: fixed;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 66px;
+        display: flex;
+        
+    }
+
+    .Link{
+        color: white;
+        width: 105px;
+        font-weight: 500;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-right: 0.0001px solid rgb(0, 77, 115);
+        border-left: 0.0001px solid rgb(0, 77, 115);
+        display: inline-flex;
+        border-color: #0f7794;
+        text-decoration: none;
+        block-size: 45px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        padding-right: 12px;
+        padding-left: 12px;
+        transition: opacity, 0.15s;
+
+    }
+
+    .Link:hover {
+        opacity: 0.7;
+        /* background-color: #5ab5cf; */
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+        justify-content: center;
+        vertical-align: center;
+        display:flex;
+        padding: 12.5px;
+    }
+
+    .logo:hover {
+        opacity: 0.7;
+        /* background-color: #5ab5cf;     */
+    }
+</style>
+
+<!-- Defines top buttons -->
+<header class = "StudentName">
+
+      <img class = "logo" src ="shpelogo.webp" href = "https://www.youtube.com/">
+    
+      <a class = "Link", href = "index.html" oneclick = "showContent()">About Me</a>
+      <a class = "Link", href = "projectpage.html" oneclick = "showContent()">Projects</a>
+      <a class = "Link">Experience</a>
+      <!-- <a class = "Link">Course Work</a> -->
+      <a class = "Link">Skills</a>
+
+</header>
+
+
+<!-- This does the background image -->
+<style>
+    .body {
+      background: linear-gradient(
+        rgba(255, 77, 115, 0.75),
+        rgba(255, 77, 115, 0.75)
+      ), url("OutsideStadium.jpg") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+  </style>
+
+<body class = "body">
+</body>
+
+
+</html>
